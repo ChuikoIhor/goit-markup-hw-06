@@ -400,6 +400,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <p class="footer-form-text">Підпишіться на розсилку</p>
+          <form>
+            <div class="form-field-footer">
+              <label class="form-label-footer" for="email"></label>
+              <input
+                class="form-input-footer"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="form-button-footer">
+                Підписатися
+                <svg class="footer-btn-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -427,8 +448,6 @@
               class="form-textarea"
               name="comment"
               id="comment"
-              cols="30"
-              rows="10"
               placeholder="Введіть текст"
             ></textarea>
           </div>
