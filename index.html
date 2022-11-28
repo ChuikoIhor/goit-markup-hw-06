@@ -475,15 +475,22 @@
             ></textarea>
           </div>
 
-          <div class="checkbox">
-            <input class="form-checkbox-input" type="checkbox" name="privacy" id="privacy" />
+          <div class="form-checkbox">
             <label class="form-checkbox-label" for="privacy">
-              <svg class="custom-checkbox">
-                <use href="./images/icons.svg#checked"></use>
+              <input
+                class="form-checkbox-input visually-hidden"
+                required
+                type="checkbox"
+                name="privacy"
+                id="privacy"
+              />
+              <svg class="custom-checkbox-icon">
+                <use class="custom-checkbox-sub-icon" href="./images/icons.svg#checked"></use>
               </svg>
-              Погоджуюся з розсилкою та приймаю
-              <a href="" class="privacy-link"> Умови договору</a></label
-            >
+              Погоджуюся з розсилкою та приймаю&nbsp;
+
+              <a href="" class="privacy-link"> Умови договору</a>
+            </label>
           </div>
 
           <button type="submit" class="form-button">Відправити</button>
