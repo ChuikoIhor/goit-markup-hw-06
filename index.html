@@ -427,21 +427,42 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <button data-modal-close type="button" class="button-close">
+          <svg class="button-icon-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <form class="form">
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+
           <div class="form-field">
             <label class="form-label" for="user-name">Ім'я</label>
-            <input class="form-input" type="text" name="user-name" id="user-name" />
+            <div class="form-icon">
+              <input class="form-input" type="text" name="user-name" id="user-name" />
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-person-form"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
             <label class="form-label" for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel" />
+            <div class="form-icon">
+              <input class="form-input" type="tel" name="tel" id="tel" />
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-phone-form"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
             <label class="form-label" for="email">Пошта</label>
-            <input class="form-input" type="email" name="email" id="email" />
+            <div class="form-icon">
+              <input class="form-input" type="email" name="email" id="email" />
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-email-form"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
@@ -456,19 +477,11 @@
 
           <div class="checkbox">
             <input type="checkbox" name="" value="" id="" />
-            <label for=""
-              >Погоджуюся з розсилкою та приймаю
-              <span> <a href="" class="test">Умови договору</a></span></label
-            >
+            <label for="">Погоджуюся з розсилкою та приймаю Умови договору</label>
           </div>
 
           <button type="submit" class="form-button">Відправити</button>
         </form>
-        <button data-modal-close type="button" class="button-close">
-          <svg class="button-icon-close">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
